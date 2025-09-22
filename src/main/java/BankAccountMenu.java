@@ -17,6 +17,7 @@ public class BankAccountMenu {
         switch(num)
         {
             case 1:
+                // kjij
                 System.out.println("How much do you want to add? ");
                 int add = sc.nextInt();
                 bAccount += add;
