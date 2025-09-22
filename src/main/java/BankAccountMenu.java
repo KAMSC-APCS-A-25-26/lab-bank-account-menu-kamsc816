@@ -11,6 +11,7 @@ public class BankAccountMenu {
         System.out.println("2. Withdraw Money");
         System.out.println("3. Check Balance");
         System.out.println("4. Exit");
+        System.out.println("Intial Balance = " + bAccount);
 
         System.out.println("What do you want to do? ");
         int num = sc.nextInt();
