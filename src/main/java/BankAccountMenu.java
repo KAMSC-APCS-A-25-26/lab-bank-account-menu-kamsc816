@@ -19,12 +19,12 @@ public class BankAccountMenu {
             case 1:
                 // kjij
                 System.out.println("How much do you want to add? ");
-                int add = sc.nextInt();
+                double add = sc.nextDouble();
                 bAccount += add;
                 break;
             case 2:
                 System.out.println("How much do you want to withdraw? ");
-                int sub = sc.nextInt();
+                double sub = sc.nextDouble();
                 bAccount -= sub;
                 break;
             case 3:
