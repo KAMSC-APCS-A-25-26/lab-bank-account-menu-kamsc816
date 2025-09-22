@@ -2,12 +2,44 @@ import java.util.Scanner;
 
 public class BankAccountMenu {
     public static void main(String[] args) {
-        // TODO: Implement the bank account menu
-        // 1. Create a double variable for balance
-        // 2. Create a while loop for the menu
-        // 3. Display the menu options
-        // 4. Use Scanner to read user input
-        // 5. Use switch statement to handle menu choices
-        // 6. Implement add money, withdraw money, check balance, and exit functionality
+        Scanner sc = new Scanner(System.in);
+        double bAccount = 0;
+
+        System.out.println("------Bank Account Menu------");
+        System.out.println("1. Add Money");
+        System.out.println("2. Withdraw Money");
+        System.out.println("3. Check Balance");
+        System.out.println("4. Exit");
+
+        System.out.println("What do you want to do? ");
+        int num = sc.nextInt();
+
+        while(num<4&&num>0)
+        {
+            if(num==1)
+            {
+                System.out.println("How much do you want to add? ");
+                int add = sc.nextInt();
+                bAccount += add;
+            }
+            if(num==2)
+            {
+                System.out.println("How much do you want to withdraw? ");
+                int sub = sc.nextInt();
+                bAccount -= sub;
+            }
+            if(num==3)
+            {
+                System.out.println("Your bank account is at " + bAccount);
+            }
+        }
+        if(num==4)
+        {
+            System.out.println("You have exited the program");
+        }
+        if(num!=1||num!=2||num!=3||num!=4)
+        {
+            System.out.println("Sorry, run the program to try again");
+        }
     }
 }
