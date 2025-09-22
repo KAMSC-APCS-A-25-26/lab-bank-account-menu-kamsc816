@@ -4,7 +4,8 @@ public class BankAccountMenu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double bAccount = 0;
-
+    while(true)
+    {
         System.out.println("------Bank Account Menu------");
         System.out.println("1. Add Money");
         System.out.println("2. Withdraw Money");
@@ -14,32 +15,27 @@ public class BankAccountMenu {
         System.out.println("What do you want to do? ");
         int num = sc.nextInt();
 
-        while(num<4&&num>0)
+        if(num==1)
         {
-            if(num==1)
-            {
-                System.out.println("How much do you want to add? ");
-                int add = sc.nextInt();
-                bAccount += add;
-            }
-            if(num==2)
-            {
-                System.out.println("How much do you want to withdraw? ");
-                int sub = sc.nextInt();
-                bAccount -= sub;
-            }
-            if(num==3)
-            {
-                System.out.println("Your bank account is at " + bAccount);
-            }
+            System.out.println("How much do you want to add? ");
+            int add = sc.nextInt();
+            bAccount += add;
         }
+        if(num==2)
+        {
+            System.out.println("How much do you want to withdraw? ");
+            int sub = sc.nextInt();
+            bAccount -= sub;
+        }
+        if(num==3)
+        {
+            System.out.println("Your bank account is at " + bAccount);
+        }
+
         if(num==4)
         {
             System.out.println("You have exited the program");
         }
-        if(num!=1||num!=2||num!=3||num!=4)
-        {
-            System.out.println("Sorry, run the program to try again");
-        }
+    }
     }
 }
