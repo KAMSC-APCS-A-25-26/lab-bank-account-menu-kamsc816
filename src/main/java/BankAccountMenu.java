@@ -5,7 +5,7 @@ public class BankAccountMenu {
         Scanner sc = new Scanner(System.in);
         double bAccount = 0;
 
-
+        while (true) {
         System.out.println("------Bank Account Menu------");
         System.out.println("1. Add Money");
         System.out.println("2. Withdraw Money");
@@ -15,8 +15,7 @@ public class BankAccountMenu {
 
         System.out.println("What do you want to do? ");
         int num = sc.nextInt();
-        switch(num)
-        {
+        switch (num) {
             case 1:
                 // kjij
                 System.out.println("How much do you want to add? ");
@@ -35,6 +34,6 @@ public class BankAccountMenu {
                 System.out.println("You have exited the program");
                 break;
         }
-
+    }
     }
 }
