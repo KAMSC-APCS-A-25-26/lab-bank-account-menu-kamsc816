@@ -4,8 +4,8 @@ public class BankAccountMenu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double bAccount = 0;
-
-        while (true) {
+        Boolean j = true;
+        while (j=true) {
         System.out.println("------Bank Account Menu------");
         System.out.println("1. Add Money");
         System.out.println("2. Withdraw Money");
@@ -40,6 +40,7 @@ public class BankAccountMenu {
                 break;
             case 4:
                 System.out.println("You have exited the program");
+                j = false;
                 break;
         }
     }
