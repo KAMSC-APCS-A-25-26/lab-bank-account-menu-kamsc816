@@ -22,6 +22,10 @@ public class BankAccountMenu {
                 bAccount += add;
                 System.out.println("Added: $" + add);
                 System.out.println("New balance: $" + bAccount);
+                if(add<0)
+                {
+                    System.out.println("No such element");
+                }
                 break;
             case 2:
                 System.out.println("How much do you want to withdraw? $");
