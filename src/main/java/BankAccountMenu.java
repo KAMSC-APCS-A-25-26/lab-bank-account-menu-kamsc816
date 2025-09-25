@@ -4,8 +4,8 @@ public class BankAccountMenu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double bAccount = 0;
-        Boolean j = true;
-        while (j=true) {
+        boolean j = true;
+        while (j) {
         System.out.println("------Bank Account Menu------");
         System.out.println("1. Add Money");
         System.out.println("2. Withdraw Money");
@@ -19,13 +19,14 @@ public class BankAccountMenu {
             case 1:
                 System.out.println("How much do you want to add? ");
                 double add = sc.nextDouble();
-                bAccount += add;
-                System.out.println("Added: $" + add);
-                System.out.println("New balance: $" + bAccount);
                 if(add<0)
                 {
                     System.out.println("No such element");
+                    break;
                 }
+                bAccount += add;
+                System.out.println("Added: $" + add);
+                System.out.println("New balance: $" + bAccount);
                 break;
             case 2:
                 System.out.println("How much do you want to withdraw? $");
